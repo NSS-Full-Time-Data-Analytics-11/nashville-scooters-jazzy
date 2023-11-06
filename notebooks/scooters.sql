@@ -128,8 +128,14 @@ FROM trips
 WHERE companyname = 'Bolt Mobility';
 
 
+WITH day AS (
+	SELECT *
+	FROM scooters
+	WHERE pubdatetime::varchar LIKE '2019-07-19%'
+	ORDER BY sumdid)
 
-
+SELECT COUNT(DISTINCT sumdid)
+FROM day;
 
 
 

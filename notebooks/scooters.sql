@@ -77,9 +77,9 @@ WITH calc_diff AS (
 		   (EXTRACT(epoch FROM (endtime - starttime))/60)%1 AS round_off,
 		   ((1440 * (enddate - startdate)) + (EXTRACT(epoch FROM (endtime - starttime))/60) - (EXTRACT(epoch FROM (endtime - starttime))/60)%1)::INT AS calc_diff
 	FROM trips
-	--WHERE companyname = 'Bolt Mobility'
+	WHERE companyname = 'Bolt Mobility'
 	--WHERE ((1440 * (enddate - startdate)) + (EXTRACT(epoch FROM (endtime - starttime))/60) - (EXTRACT(epoch FROM (endtime - starttime))/60)%1)::INT <> (tripduration - tripduration%1)::INT
-	--ORDER BY tripduration DESC
+	ORDER BY tripduration DESC
 	),
 	
 total_trips AS (
@@ -118,5 +118,20 @@ WHERE starttime::varchar LIKE '__:__:___%';
 SELECT *
 FROM trips
 WHERE enddate < startdate;
+
+
+
+SELECT startdate, starttime, enddate, endtime,
+	   CASE WHEN companyname = 'Bolt Mobility' THEN tripduration/60
+	   		ELSE tripduration END AS trip_in_min
+FROM trips
+WHERE companyname = 'Bolt Mobility';
+
+
+
+
+
+
+
 
 

@@ -1,0 +1,63 @@
+WITH cte as (SELECT pubtimestamp,
+    				companyname,
+    				sumdid, 
+					startdate+starttime AS trip_start,
+					enddate+endtime AS trip_end
+			FROM TRIPS)
+SELECT 
+    pubtimestamp::date AS report_date,
+    companyname,
+    sumdid, 
+	SUM(ROUND(EXTRACT(EPOCH FROM (trip_end - trip_start)) / 60.0, 2)) AS total_min_per_day_used,
+	ROUND((SUM(ROUND(EXTRACT(EPOCH FROM (trip_end - trip_start)) / 60.0, 2)) / 1440.0 * 100)::numeric, 3) || '%' AS trip_use_per_day_percent
+	--trip_start,
+	--trip_end,
+    --startdate
+	--starttime,
+	--enddate,
+  	--endtime,
+	--startlatitude,
+    --startlongitude,
+    --endlatitude,
+    --endlongitude,
+    --triproute,
+FROM trips
+INNER JOIN cte USING(pubtimestamp,companyname,sumdid)
+GROUP BY sumdid, companyname, report_date
+
+
+
+
+
+WITH cte1 AS (SELECT pubtimestamp::date,
+    		companyname,
+    		sumdid, 
+			startdate+starttime AS trip_start,
+			enddate+endtime AS trip_end
+			FROM TRIPS),
+	cte2 as 
+	 	(SELECT pubdatetime::date AS pubtimestamp, sumdid, companyname
+			FROM scooters
+			GROUP BY sumdid, companyname, pubtimestamp)
+SELECT 
+    pubtimestamp::date AS date,
+    companyname,
+    sumdid, 
+	SUM(ROUND(EXTRACT(EPOCH FROM (trip_end - trip_start)) / 60.0, 2)) AS total_min_per_day_used,
+	ROUND((SUM(ROUND(EXTRACT(EPOCH FROM (trip_end - trip_start)) / 60.0, 2)) / 1440.0 * 100)::numeric, 3) || '%' AS trip_use_per_day_percent
+	--trip_start,
+	--trip_end,
+    --startdate
+	--starttime,
+	--enddate,
+  	--endtime,
+	--startlatitude,
+    --startlongitude,
+    --endlatitude,
+    --endlongitude,
+    --triproute,
+FROM trips
+INNER JOIN cte1 USING(pubtimestamp, companyname, sumdid)
+FULL JOIN cte2 USING(pubtimestamp, sumdid, companyname)
+GROUP BY sumdid, companyname, date
+order by trip_use_per_day_percent

@@ -138,6 +138,20 @@ SELECT COUNT(DISTINCT sumdid)
 FROM day;
 
 
+SELECT pubdatetime, EXTRACT(DOY FROM pubdatetime) AS day -- DOY mean "Day of Year"
+FROM scooters
+LIMIT 10;
+
+SELECT EXTRACT(MONTH FROM pubdatetime) AS month, EXTRACT(DAY FROM pubdatetime) AS day, COUNT(pubdatetime) AS count
+FROM scooters
+GROUP BY month, day
+ORDER BY count;
+
+SELECT COUNT(starttime)
+FROM trips;
 
 
+SELECT triproute
+FROM trips
+WHERE triproute != '[]';
 

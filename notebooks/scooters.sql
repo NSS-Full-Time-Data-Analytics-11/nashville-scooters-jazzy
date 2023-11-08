@@ -155,3 +155,7 @@ SELECT triproute
 FROM trips
 WHERE triproute != '[]';
 
+
+SELECT COUNT(DISTINCT sumdid)
+FROM scooters;
+

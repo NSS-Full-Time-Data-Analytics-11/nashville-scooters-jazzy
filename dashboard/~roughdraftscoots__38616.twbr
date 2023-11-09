@@ -1,0 +1,1897 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0909.1159                               -->
+<workbook original-version='18.1' source-build='2023.2.2 (20232.23.0909.1159)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='normalized_scoots' inline='true' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='normalized_scoots' name='textscan.0kwczgj17alpmf16w7tgm0klu842'>
+            <connection class='textscan' directory='C:/Users/rose/Documents/NSS/Python/projects/nashville-scooters-jazzy/data' filename='normalized_scoots.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0kwczgj17alpmf16w7tgm0klu842' name='normalized_scoots.csv' table='[normalized_scoots#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='companyname' ordinal='1' />
+            <column datatype='date' date-parse-format='MM' name='month' ordinal='2' />
+            <column datatype='real' name='total_min_per_month' ordinal='3' />
+            <column datatype='real' name='avg_cost' ordinal='4' />
+            <column datatype='real' name='cost_per_month' ordinal='5' />
+            <column datatype='integer' name='sumdid' ordinal='6' />
+            <column datatype='real' name='normalized' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0kwczgj17alpmf16w7tgm0klu842' name='normalized_scoots.csv' table='[normalized_scoots#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='companyname' ordinal='1' />
+            <column datatype='date' date-parse-format='MM' name='month' ordinal='2' />
+            <column datatype='real' name='total_min_per_month' ordinal='3' />
+            <column datatype='real' name='avg_cost' ordinal='4' />
+            <column datatype='real' name='cost_per_month' ordinal='5' />
+            <column datatype='integer' name='sumdid' ordinal='6' />
+            <column datatype='real' name='normalized' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[normalized_scoots.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[normalized_scoots.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized_scoots.csv_E3A9066047894C92B9E5490635D71D85]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>companyname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[companyname]</local-name>
+            <parent-name>[normalized_scoots.csv]</parent-name>
+            <remote-alias>companyname</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized_scoots.csv_E3A9066047894C92B9E5490635D71D85]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[normalized_scoots.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized_scoots.csv_E3A9066047894C92B9E5490635D71D85]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_min_per_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_min_per_month]</local-name>
+            <parent-name>[normalized_scoots.csv]</parent-name>
+            <remote-alias>total_min_per_month</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized_scoots.csv_E3A9066047894C92B9E5490635D71D85]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_cost]</local-name>
+            <parent-name>[normalized_scoots.csv]</parent-name>
+            <remote-alias>avg_cost</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized_scoots.csv_E3A9066047894C92B9E5490635D71D85]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cost_per_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cost_per_month]</local-name>
+            <parent-name>[normalized_scoots.csv]</parent-name>
+            <remote-alias>cost_per_month</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized_scoots.csv_E3A9066047894C92B9E5490635D71D85]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sumdid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sumdid]</local-name>
+            <parent-name>[normalized_scoots.csv]</parent-name>
+            <remote-alias>sumdid</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized_scoots.csv_E3A9066047894C92B9E5490635D71D85]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>normalized</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[normalized]</local-name>
+            <parent-name>[normalized_scoots.csv]</parent-name>
+            <remote-alias>normalized</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[normalized_scoots.csv_E3A9066047894C92B9E5490635D71D85]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='total minutes ridden per 100 scooters' datatype='real' name='[Calculation_2717359445839425537]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([total_min_per_month]/ [sumdid]) * 100' />
+      </column>
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='normalized_scoots.csv' datatype='table' name='[__tableau_internal_object_id__].[normalized_scoots.csv_E3A9066047894C92B9E5490635D71D85]' role='measure' type='quantitative' />
+      <column caption='Avg Cost per minute' datatype='real' name='[avg_cost]' role='measure' type='quantitative' />
+      <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+      <column caption='Cost Per Month' datatype='real' name='[cost_per_month]' role='dimension' type='quantitative' />
+      <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Cost of scooters per 100' datatype='real' name='[normalized]' role='measure' type='quantitative' />
+      <column caption='Count of scooters' datatype='integer' name='[sumdid]' role='measure' type='quantitative' />
+      <column caption='total minutes ridden per month (copy)' datatype='datetime' datatype-customized='true' hidden='true' name='[total minutes ridden per month (copy)_2717359445877862402]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='DATETIME([total_min_per_month])' />
+      </column>
+      <column caption='total minutes ridden per month' datatype='real' name='[total_min_per_month]' role='dimension' type='quantitative' />
+      <column-instance column='[avg_cost]' derivation='Attribute' name='[attr:avg_cost:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[sumdid]' derivation='Attribute' name='[attr:sumdid:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_cost]' derivation='Avg' name='[avg:avg_cost:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[sumdid]' derivation='Avg' name='[avg:sumdid:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[sumdid]' derivation='Count' name='[cnt:sumdid:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[avg_cost]' derivation='None' name='[none:avg_cost:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+      <column-instance column='[sumdid]' derivation='None' name='[none:sumdid:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_cost]' derivation='Sum' name='[sum:avg_cost:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[sumdid]' derivation='Sum' name='[sum:sumdid:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Companyname)' hidden='true' name='[Action (Companyname)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[companyname]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(month))' hidden='true' name='[Action (MONTH(month))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mn:month:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[attr:avg_cost:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:avg_cost:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:avg_cost:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:avg_cost:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[attr:sumdid:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:sumdid:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[cnt:sumdid:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:sumdid:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:sumdid:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:companyname:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bird&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lime&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Gotcha&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SPIN&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;JUMP&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Bolt Mobility&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lyft&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='normalized_scoots.csv' id='normalized_scoots.csv_E3A9066047894C92B9E5490635D71D85'>
+            <properties context=''>
+              <relation connection='textscan.0kwczgj17alpmf16w7tgm0klu842' name='normalized_scoots.csv' table='[normalized_scoots#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='companyname' ordinal='1' />
+                  <column datatype='date' date-parse-format='MM' name='month' ordinal='2' />
+                  <column datatype='real' name='total_min_per_month' ordinal='3' />
+                  <column datatype='real' name='avg_cost' ordinal='4' />
+                  <column datatype='real' name='cost_per_month' ordinal='5' />
+                  <column datatype='integer' name='sumdid' ordinal='6' />
+                  <column datatype='real' name='normalized' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+      <datasources>
+        <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+        <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+        <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]'>
+        <groupfilter function='level-members' level='[mn:month:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_7555782C92B74A07B29C4DDB2D9D1F10]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 8' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_36761CF51E184B20BA81D4195B122F1C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 9' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated) 1' name='[Action4_BA21F6324B4B454C92610315F0E927EE]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1 (2)' type='sheet' worksheet='Sheet 9' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1 (2)' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action4_D2D1D4AEA8574EE6BDD5CC3229E59EB5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1 (2)' type='sheet' worksheet='Sheet 4 (2)' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1 (2)' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column-instance column='[normalized]' derivation='Avg' name='[avg:normalized:qk]' pivot='key' type='quantitative' />
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[month]' derivation='None' name='[none:month:ok]' pivot='key' type='ordinal' />
+            <column caption='Cost of scooters per 100' datatype='real' name='[normalized]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:month:ok] * [federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk])</rows>
+        <cols>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]</cols>
+      </table>
+      <simple-id uuid='{C1B950F6-398A-4CB6-99DD-DC913CB901D5}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='10'>Total Scooters by Company</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sumdid]' derivation='Sum' name='[sum:sumdid:qk]' pivot='key' type='quantitative' />
+            <column caption='Count of scooters' datatype='integer' name='[sumdid]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (Companyname)]'>
+            <groupfilter function='level-members' level='[companyname]' user:ui-action-filter='[Action2_36761CF51E184B20BA81D4195B122F1C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (MONTH(month))]'>
+            <groupfilter function='level-members' level='[mn:month:ok]' user:ui-action-filter='[Action1_7555782C92B74A07B29C4DDB2D9D1F10]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:sumdid:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (Companyname)]</column>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (MONTH(month))]</column>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:sumdid:qk]' scope='cols' value='Total Scooters' />
+            <format attr='tick-color' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:sumdid:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='vertical-align' data-class='subtotal' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:sumdid:qk]' value='auto' />
+            <format attr='text-align' data-class='subtotal' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:sumdid:qk]' value='auto' />
+            <format attr='text-align' data-class='total' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:sumdid:qk]' value='auto' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' />
+              <lod column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:sumdid:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:sumdid:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]</rows>
+        <cols>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:sumdid:qk]</cols>
+      </table>
+      <simple-id uuid='{757D05A8-2DA8-4759-9861-267E853D48E9}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8BC57387-0980-4F91-8074-2087F7DD88CA}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column-instance column='[avg_cost]' derivation='Avg' name='[avg:avg_cost:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Cost per minute' datatype='real' name='[avg_cost]' role='measure' type='quantitative' />
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:avg_cost:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:avg_cost:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.050000000000000003' max='0.25' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='title' class='0' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:avg_cost:qk]' scope='cols' value='Avg Cost per minute' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:avg_cost:qk]' value='c&quot;$&quot;#,##0.00;(&quot;$&quot;#,##0.00)' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]</rows>
+        <cols>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:avg_cost:qk]</cols>
+      </table>
+      <simple-id uuid='{2D282F6C-92A2-4778-BDCB-9D70BD9E0E1A}' />
+    </worksheet>
+    <worksheet name='Sheet 12 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Bold' fontsize='8'>Average Cost Per Minute</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column-instance column='[avg_cost]' derivation='Avg' name='[avg:avg_cost:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Cost per minute' datatype='real' name='[avg_cost]' role='measure' type='quantitative' />
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (Companyname)]'>
+            <groupfilter function='level-members' level='[companyname]' user:ui-action-filter='[Action4_D2D1D4AEA8574EE6BDD5CC3229E59EB5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (MONTH(month))]'>
+            <groupfilter function='level-members' level='[mn:month:ok]' user:ui-action-filter='[Action3_3394B32C58DA45219019DFE30625C6DF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (MONTH(month))]</column>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (Companyname)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:avg_cost:qk]' scope='cols' value='Avg Cost per minute' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#000000' />
+            <format attr='text-format' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:avg_cost:qk]' value='c&quot;$&quot;#,##0.00;(&quot;$&quot;#,##0.00)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:avg_cost:qk]' value='c&quot;$&quot;#,##0.00;(&quot;$&quot;#,##0.00)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:avg_cost:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{5CDFB51C-1C22-4E0C-A23F-E6C594A83CDB}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{86AEBD23-6BFE-4C2D-9DD1-B0DC987BE82B}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[normalized]' derivation='None' name='[none:normalized:qk]' pivot='key' type='quantitative' />
+            <column caption='Cost of scooters per 100' datatype='real' name='[normalized]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:normalized:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:normalized:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:normalized:qk]</rows>
+        <cols>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]</cols>
+      </table>
+      <simple-id uuid='{AAFA720D-0B92-4EB3-82B7-7F7E14B8475A}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column-instance column='[normalized]' derivation='Avg' name='[avg:normalized:qk]' pivot='key' type='quantitative' />
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+            <column caption='Cost of scooters per 100' datatype='real' name='[normalized]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (Companyname)]'>
+            <groupfilter function='level-members' level='[companyname]' user:ui-action-filter='[Action2_36761CF51E184B20BA81D4195B122F1C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (MONTH(month))]'>
+            <groupfilter function='level-members' level='[mn:month:ok]' user:ui-action-filter='[Action1_7555782C92B74A07B29C4DDB2D9D1F10]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (MONTH(month))]</column>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (Companyname)]</column>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' scope='rows' value='Average Revenue per 100 ' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' value='C1033%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' />
+              <text column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]</rows>
+        <cols>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]</cols>
+      </table>
+      <simple-id uuid='{A3AB1B1D-2F5E-4106-88D8-5DE47F543E8D}' />
+    </worksheet>
+    <worksheet name='Sheet 4 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='10'>Average Revenue per 100 Scooters</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column-instance column='[normalized]' derivation='Avg' name='[avg:normalized:qk]' pivot='key' type='quantitative' />
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+            <column caption='Cost of scooters per 100' datatype='real' name='[normalized]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (Companyname)]'>
+            <groupfilter function='level-members' level='[companyname]' user:ui-action-filter='[Action2_36761CF51E184B20BA81D4195B122F1C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (Companyname)]</column>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' scope='rows' value='Average Revenue per 100 ' />
+            <encoding attr='space' class='1' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' scope='rows' value='false' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' value='C1033%' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' value='Month' />
+            <format attr='border-style' value='solid' />
+            <format attr='background-color' value='#f2f6f7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Æ&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.37281766533851624' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' />
+              <text column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='2.1546962261199951' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk] + [federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[avg:normalized:qk])</rows>
+        <cols>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]</cols>
+      </table>
+      <simple-id uuid='{6E9D1283-8CE5-4D85-B631-1BD74CEB2D0F}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column-instance column='[avg_cost]' derivation='Attribute' name='[attr:avg_cost:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Cost per minute' datatype='real' name='[avg_cost]' role='measure' type='quantitative' />
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[month]' derivation='None' name='[none:month:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[attr:avg_cost:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[attr:avg_cost:qk]</column>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:month:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[attr:avg_cost:qk]</rows>
+        <cols>([federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk] / [federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:month:ok])</cols>
+      </table>
+      <simple-id uuid='{16C05219-E0D5-41FD-9F9F-F9DFEB616D06}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sumdid]' derivation='Sum' name='[sum:sumdid:qk]' pivot='key' type='quantitative' />
+            <column caption='Count of scooters' datatype='integer' name='[sumdid]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]</rows>
+        <cols>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:sumdid:qk]</cols>
+      </table>
+      <simple-id uuid='{24EB89C1-F244-420F-8018-959430EFBAA0}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column-instance column='[total_min_per_month]' derivation='Attribute' name='[attr:total_min_per_month:qk]' pivot='key' type='quantitative' />
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+            <column caption='total minutes ridden per month' datatype='real' name='[total_min_per_month]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[attr:total_min_per_month:qk]</rows>
+        <cols>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]</cols>
+      </table>
+      <simple-id uuid='{73C2A763-9AE7-4F8C-85EF-354D21F687F0}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (Companyname)]'>
+            <groupfilter function='level-members' level='[companyname]' user:ui-action-filter='[Action2_36761CF51E184B20BA81D4195B122F1C]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (Companyname)]</column>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' data-class='subtotal' value='normal' />
+            <format attr='font-weight' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' value='bold' />
+            <format attr='font-size' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' value='18' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-weight' data-class='subtotal' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' value='normal' />
+            <format attr='font-weight' data-class='total' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#000000' />
+            <format attr='font-size' scope='rows' value='14' />
+            <format attr='font-weight' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' value='bold' />
+            <format attr='font-size' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' value='14' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D622421A-174D-44D1-815E-7C74EB03D351}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='10'>Total Scooter Ride Time per 100 Scooters</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+            <column caption='total minutes ridden per 100 scooters' datatype='real' name='[Calculation_2717359445839425537]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([total_min_per_month]/ [sumdid]) * 100' />
+            </column>
+            <column caption='Companyname' datatype='string' name='[companyname]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+            <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[companyname]' derivation='None' name='[none:companyname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2717359445839425537]' derivation='Sum' name='[sum:Calculation_2717359445839425537:qk]' pivot='key' type='quantitative' />
+            <column caption='Count of scooters' datatype='integer' name='[sumdid]' role='measure' type='quantitative' />
+            <column caption='total minutes ridden per month' datatype='real' name='[total_min_per_month]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (Companyname)]'>
+            <groupfilter function='level-members' level='[companyname]' user:ui-action-filter='[Action4_D2D1D4AEA8574EE6BDD5CC3229E59EB5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (MONTH(month))]'>
+            <groupfilter function='level-members' level='[mn:month:ok]' user:ui-action-filter='[Action1_7555782C92B74A07B29C4DDB2D9D1F10]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (MONTH(month))]</column>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]</column>
+            <column>[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[Action (Companyname)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' data-class='total' field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:Calculation_2717359445839425537:qk]' value='*' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:Calculation_2717359445839425537:qk]' />
+              <text column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' />
+              <text column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:Calculation_2717359445839425537:qk]' />
+              <color column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Æ&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[sum:Calculation_2717359445839425537:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0FE9D4EF-3409-4D7C-9B4E-0CD80C1F70D6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49000' id='7' param='vert' type-v2='layout-flow' w='98400' x='800' y='50000'>
+            <zone h='49000' id='5' type-v2='layout-basic' w='98400' x='800' y='50000'>
+              <zone h='49000' id='9' name='Sheet 9' show-title='false' w='49200' x='50000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='40' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='10' name='Sheet 10' show-title='false' w='49200' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='40' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='49000' id='8' name='Sheet 4' show-title='false' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='40' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='33250' id='3' name='Sheet 8' show-title='false' w='33300' x='66300' y='1250' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AC842B4D-C58D-4684-9B29-574122E14A12}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1 (2)'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='normalized_scoots' name='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0n5w16y1hwbjsp15gbiiv1vxwgj7'>
+        <column-instance column='[month]' derivation='Month' name='[mn:month:ok]' pivot='key' type='ordinal' />
+        <column datatype='date' name='[month]' role='dimension' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='18' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='14' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='98000' id='12' type-v2='layout-basic' w='98400' x='800' y='1000'>
+                <zone h='49000' id='7' param='vert' type-v2='layout-flow' w='98400' x='800' y='50000'>
+                  <zone h='49000' id='5' type-v2='layout-basic' w='98400' x='800' y='50000'>
+                    <zone h='49000' id='9' name='Sheet 9' w='49200' x='50000' y='50000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='40' />
+                      </zone-style>
+                    </zone>
+                    <zone h='49000' id='10' name='Sheet 10' w='49200' x='800' y='50000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='40' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='49000' id='11' name='Sheet 4 (2)' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='20' />
+                    <format attr='margin-bottom' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='33250' id='16' name='Sheet 12 (2)' w='33300' x='82100' y='11125'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='2' />
+            <format attr='margin-bottom' value='2' />
+          </zone-style>
+        </zone>
+        <zone h='8250' id='19' mode='dropdown' name='Sheet 4 (2)' param='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' type-v2='filter' values='database' w='16800' x='82300' y='2000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{683CA7C7-42CE-4FD3-8B05-5E58751CCB48}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Sheet 12' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='33250' id='8' name='Sheet 8' w='33300' x='67400' y='39625' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{ED731699-88F4-4082-A459-46711AD51426}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='295' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='830' />
+            <zone h='87863' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='11307'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Scooter Cost by Company from May 2019 through July 2019' captured-sheet='Dashboard 1 (2)' id='1'>
+                    <currentDeltas>
+                      <worksheet name='Sheet 10'>
+                        <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]'>
+                          <groupfilter function='member' level='[mn:month:ok]' member='5' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                          <target field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Sheet 12 (2)'>
+                        <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]'>
+                          <groupfilter function='member' level='[mn:month:ok]' member='5' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                          <target field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Sheet 4 (2)'>
+                        <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]'>
+                          <groupfilter function='member' level='[mn:month:ok]' member='5' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                          <target field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' />
+                        </filter>
+                        <selection-collection />
+                      </worksheet>
+                      <worksheet name='Sheet 9'>
+                        <filter class='categorical' column='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]'>
+                          <groupfilter function='member' level='[mn:month:ok]' member='5' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                          <target field='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' />
+                        </filter>
+                      </worksheet>
+                    </currentDeltas>
+                    <capturedDeltas />
+                  </story-point>
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{3338ECA2-006E-4E6F-969F-AB4B523C60B6}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DA2C91AC-6DF1-4057-85F1-0F0DE52D18D4}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{08A79065-A3D0-44CA-9FBE-BD4816A6727D}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E5F51E8B-D9C7-4A48-A223-8BF4A3B0E85E}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FC6F177A-6526-4795-8D37-B10DDCD662AF}' />
+    </window>
+    <window class='worksheet' name='Sheet 4 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[mn:month:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{11465850-DB76-4560-89C8-D9DBCA168EE4}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:month:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF79F5F0-7A6D-4AB3-8643-7D4C6BC3E181}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1313FBCB-74A4-4A9E-9A59-C7B72E64FCA1}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F0BAB5FD-0435-43DC-85AC-97942926CAE3}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{597A0CA3-4F25-4BB4-AE52-FFF9D8511C1B}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{316AC29D-3881-4CA8-99CC-56AF87A8B88D}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 10'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 8' />
+        <viewpoint name='Sheet 9'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{B19CD897-B411-45B6-82E7-F00CA55AB8A3}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1 (2)'>
+      <viewpoints>
+        <viewpoint name='Sheet 10'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 12 (2)' />
+        <viewpoint name='Sheet 4 (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 9'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{A5DAB23A-E651-49F0-B5A6-863FE814C822}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{2054A193-3593-493F-A3E2-C9D3860B3921}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Sheet 12'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 8' />
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{08CCF958-D6F2-46BE-A7E8-88E53B2CFDAA}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{21745B81-98C6-45C4-B99D-7F88CB9423C2}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FF2F9A8C-AFA6-450F-B531-FC14F93250A8}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0n5w16y1hwbjsp15gbiiv1vxwgj7].[none:companyname:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{80402046-E7E5-4C7A-9376-BCBF48FC37CD}' />
+    </window>
+    <window class='worksheet' name='Sheet 12 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A23359A5-788D-4DFF-A71B-684B972FC7CF}' />
+    </window>
+  </windows>
+</workbook>
